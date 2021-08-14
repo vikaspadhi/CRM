@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        .party_title
+        {
+            font-size: 18px;
+            margin: 1px 0;
+        }
+        .receipt_title
+        {
+            font-size: 20px;
+            text-align: center;
+        }
+        .receipt_text
+        {
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            color: black;
+            margin:1px 0px;
+        }
+        .table
+        {
+            border: 1px solid lightgrey;
+            padding: 0.5rem;
+        }
+        th
+        {
+            text-align: left;
+        }
+        .table_right
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+            <table>
+                <tr>
+                    <th>
+                        <h1 class="party_title">Codesprout IT PVT LTD</h1>
+                        <p class="receipt_text">Email: info@codesprout.in</p>
+                        <p class="receipt_text">Phone: 7039414902 / 1243567809</p>
+                        <a href="https://codesprout.in"><p class="receipt_text">Website: Codesprout.in</p></a>
+                    </th>
+                    <th class="table_right">
+                       <p class="receipt_text">Date:{{date}}</p> 
+                    </th>
+                </tr>
+            </table>
+            
+
+            <hr>
+
+            <h1 class="receipt_title">Payment Receipt</h1>
+
+            <h1 class="party_title">Buyer: {{name}}</h1>
+                        <p class="receipt_text">Project: {{project_id}}</p>
+                        <p class="receipt_text">Email: {{email}}</p>
+                        <p class="receipt_text">Phone: 123456789</p>
+            
+
+            <table style="margin-top: 4rem;" class="table">
+                <tr>
+                    <th>
+                        <p class="receipt_text">Service</p>
+                    </th>
+                    <th>
+                        <p class="receipt_text">{{type}}</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="receipt_text">Description</p>
+                    </th>
+                    <th>
+                        <p class="receipt_text">{{description}}</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="receipt_text">Payment Method</p>
+                    </th>
+                    <th>
+                        <p class="receipt_text">Cash</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="receipt_text">Amount Paid</p>
+                    </th>
+                    <th>
+                        <p class="receipt_text">{{amount}}</p>
+                    </th>
+                </tr>
+              </table>
+
+</body>
+</html>
